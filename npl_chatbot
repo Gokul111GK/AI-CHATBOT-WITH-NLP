@@ -1,1 +1,20 @@
 
+import nltk
+from nltk.chat.util import Chat, reflections
+
+# Define conversation patterns
+pairs = [
+    [r"hi|hello|hey", ["Hello! How can I help you today?", "Hi there! What can I do for you?"]],
+    [r"what is your name?", ["I'm an AI chatbot created using NLTK!", "You can call me ChatBuddy."]],
+    [r"how are you?", ["I'm doing well, thank you!", "I'm a bot, but I'm functioning perfectly!"]],
+    [r"(.*) your job?", ["I’m here to answer your questions using NLP."]],
+    [r"(.*) help (.*)", ["Sure, I'm here to help! What do you need assistance with?"]],
+    [r"(.*) (location|city) ?", ["I'm based in the cloud, everywhere and nowhere at once!"]],
+    [r"bye|goodbye", ["Goodbye! Have a great day!", "See you later!"]],
+    [r"(.*)", ["Sorry, I didn’t understand that. Can you rephrase?"]]
+]
+
+# Create and start the chatbot
+chatbot = Chat(pairs, reflections)
+print("🤖 ChatBot: Hello! Type something to start chatting (type 'bye' to exit).")
+chatbot.converse()
