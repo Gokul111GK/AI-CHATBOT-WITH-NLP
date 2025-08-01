@@ -10,3 +10,7 @@ DOMAIN: PYTHON PROGRAMMING
 DURATION: 4 WEEEKS
 
 MENTOR: NEELA SANTOSH
+
+OUTPUT:
+
+<img width="1144" height="740" alt="Image" src="https://github.com/user-attachments/assets/654ca2db-7ef1-443a-8c43-48de65b016a7" />
